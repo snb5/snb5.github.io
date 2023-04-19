@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset= "utf-8">
+	<title>Project</title>
+	<link rel="stylesheet" href="styles.css">
+	<!-- Shannon Brown CSCE 102 014 03/29/23 -->
+</head>
+<body>
+	<div id="content">
+			<header>
+				<h1>Shannon Brown</h1>
+			</header>
+			<nav id="main-nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="quiz.html">Quiz</a></li>
+					<li><a href="contact.html">Contact Me</a></li>
+				</ul>
+			</nav>
+			<main id="containerQ">
+				<section class="flexMe">
+					<h1>Website Development Quiz</h1>
+					<p>What do you name a java script file in your folder?</p>
+					<select id="q1-sel">
+						<option>java.script</option>
+						<option>script.js</option>
+						<option>js.script</option>
+						<option>javascript.html</option>
+					</select>
+					<p>What code should you use to test your java script?</p>
+					<select id="q2-sel">
+						<option>function</option>
+						<option>if</option>
+						<option>else</option>
+						<option>alert</option>
+					</select>
+					<p>What does CSS stand for?</p>
+					<select id="q3-sel">
+						<option>Cascading Style Sheets</option>
+						<option>Cartoon Sheet Style</option>
+						<option>Cat Screen Style</option>
+						<option>Concerted Style Screen</option>
+					</select>
+					<p>Is a pargraph a block-level element in HTML?</p>
+					<select id="q4-sel">
+						<option>no</option>
+						<option>yes</option>
+						<option>sometimes</option>
+						<option>only if you code for it in CSS</option>
+					</select>
+					<p>
+						<button onClick="showResults()">Submit</button>
+					</p>
+				</section>
+				<section class="flexMe">
+					<h1>Quiz Results</h1>
+					<p id="q1-res"></p>
+					<p id="q2-res"></p>
+					<p id="q3-res"></p>
+					<p id="q4-res"></p>
+					<p id="score"></p>
+				</section>
+			</main>
+			<footer>
+				<p>&copy; My copywrite</p>
+			</footer>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

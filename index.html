@@ -2,19 +2,68 @@
 <html lang="en">
 <head>
 	<meta charset= "utf-8">
-	<title> Class 4/18</title>
+	<title>Project</title>
 	<link rel="stylesheet" href="styles.css">
+	<!-- Shannon Brown CSCE 102 014 02/15/23 -->
 </head>
 <body>
 	<div id="content">
-		<header>
-			<h1>My Main Header</h1>
-		</header>
-		<footer>
-			<p>&copy; Shannon</p>
-		</footer>
+			<header>
+				<h1>Shannon Brown</h1>
+			</header>
+			<nav id="main-nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="quiz.html">Quiz</a></li>
+					<li><a href="contact.html">Contact Me</a></li>
+				</ul>
+			</nav>
+			<main id="container">
+				<div id="slideshow">
+					<!--How to get slide show to go without an onclick function???-->
+					<img src="images/pic1.jpg" alt="" id="pic1"onclick="changeSlide()">
+					<img src="images/pic2.jpg" alt="" id="pic2" class="hidden">
+					<img src="images/pic3.jpg" alt="" id="pic3" class="hidden">
+					<img src="images/pic4.jpg" alt="" id="pic4" class="hidden">
+					<!---Fix how the image looks on mobile -->
+				</div>
+				<section class="about">
+					<h2>About Me</h2>
+					<p>
+						My name is Shannon Brown. My birthday is August 12th. I am 20 years old. I go to the University of South Carolina. I am a biology major. I am in clubs such as CHAARG, Give a dog a bone, Women in healthcare, etc. 
+						My favorite color is pink. I was born in Virginia. I went to elementary school in Maryland. I went to middle and high school in Pennsylvania. 
+						I have two dogs. They are rescues. Their names are Goose and Cooper. I have a sister who is 5 and a half years younger than me.
+					</p>
+					<p id="pA2" class="hidden">
+						I recently started enjoying doing at home workout as a hobby. Dance workouts are very fun and keep me engaged and entertained. Pilates workouts are also fun.
+						I like to watch Youtube and Netflix when I have free time. Dexter is one of my favorite TV shows I watched on Netflix. 
+						During the week I spend almost all of my day focusing on school work, so on the weekends I like to get my mind off of school. One way I relax on the weekends is by going out with my friends.
+						My friends and I like to hang out and watch movies together. I'm very grateful for the friends I have.
+					</p>
+					<a id="meLink" onclick="meMore()" href="#">See More...</a>
+				</section>
+				<section class="plans">
+					<h2>My Future Career Plans</h2>
+					<p>
+						Right now, I am a sophomore undergraduate Biology major with a Pre-Medicine concentration. When I graduate, I want to move on to medical school. Right now, I'm looking into schools like UVA, Pennstate, and Johns Hopkins for medical school.
+						Since I plan on going to medical school, it is pretty clear that I want to become a physician. I'm not totally sure what kind of doctor I want to be yet. My main interests are family medicine and plastic surgery.
+						I am interested in family medicine because it is the specialty I am most familiar with because that is the type of doctor I most often interact with/go see. I find plastic surgery very interesting and it is the specialty I enjoy learning about the most.
+						However, I have heard that getting into plastic surgery is very difficult.
+					</p>
+					<p id="pF2" class="hidden">
+						If I do not matriculate into medical school, I have some back-up plans. One of my back-up plans is to become a high school science teacher. Over winter break I shadowed my former high school biology teacher to get a feel for what her job is like.
+						While being a doctor is still my primary goal, I think being a teacher could be interesting too. If I decided to become a teacher, I could get my master's in education after I get my undergraduate degree. Another back-up career I have in mind is a career in research.
+						I already do undergraduate research and I like it well enough. However, it is not what I envision myself doing for the rest of my life, so this may just be a temporary career if I go this route.
+					</p>
+					<a id="futureLink" onclick="futureMore()" href="#">See More...</a>
+					<h2>What I Learned From Computer Science</h2>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/x3Tb_sF7IFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</section>
+			</main>
+			<footer>
+				<p>&copy; My copywrite</p>
+			</footer>
 	</div>
 	<script src="script.js"></script>
-	<!-- put this in before end of body -->
 </body>
 </html>

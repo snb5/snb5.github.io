@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset= "utf-8">
+	<title>Project</title>
+	<link rel="stylesheet" href="styles.css">
+	<!-- Shannon Brown CSCE 102 014 03/01/23 -->
+</head>
+<body>
+	<div id="content">
+			<header>
+				<h1>Shannon Brown</h1>
+			</header>
+			<nav id="main-nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="quiz.html">Quiz</a></li>
+					<li><a href="contact.html">Contact Me</a></li>
+				</ul>
+			</nav>
+			<main id="containerC">
+				<h2>Directions</h2>
+				<h4> Yoga Studio Z</h4>
+				<p> 111 Yang Avenue</p>
+				<p>West Palm Beach, FL, 48953</p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d114052.6110713851!2d-80.1250499095518!3d26.7078432122594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x88d8d7d25f6c3519%3A0x6b1c55a73ea9ed5b!2s480%20Hibiscus%20Street%2C%20Suite%20109%20Studio%20entrance%20faces%20S.%20Quadrille%20Blvd%2C%20West%20Palm%20Beach%2C%20FL%2033401!3m2!1d26.707860399999998!2d-80.05500959999999!5e0!3m2!1sen!2sus!4v1677686975135!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<br>
+				<h2>Contact Me</h2>
+				<form action="https://api.web3forms.com/submit" method="POST">
+
+					<input type="hidden" name="access_key" value="39d936e1-08e1-4ed2-a11d-0ca0fdc23064">
+					<p>Name: </p>
+					<input type="text" name="name" required>
+					<p>Email: </p>
+					<input type="email" name="email" required>
+					<p>Message: </p>
+					<textarea name="message" required></textarea>
+					<input type="hidden" name="redirect" value="https://web3forms.com/success">
+					<br>
+					<button type="submit">Send</button>
+
+				</form>
+			</main>
+			<footer>
+				<p>&copy; My copywrite</p>
+			</footer>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
